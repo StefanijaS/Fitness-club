@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding-bottom: 100px;
+    color: #212121;
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    background: #570194;
+    z-index: 999;
+}
+
+.nav-bar a {
+    padding: 16px 14px;
+    text-decoration: none;
+    /* background-color: #333; */
+    color: #f2f2f2;
+}
+
+.nav-bar a:hover {
+    background-color: #ddd;
+    color: black;
+    border-bottom-width: 4px;
+}
+
+.abHeader {
+    display: grid;
+    background: #000000;
+    color: #ffffff;
+    margin-top: 0px;
+    text-align: center;
+    padding: 20px;
+}
+
+.absMainSection {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+ 
+    grid-gap: 5px;
+    font-size: 25px;
+    color: #000000;
+    background: #ffffff;
+    padding: 50px;
+    margin-top: 35px;
+    box-shadow: 10px 10px 10px grey;
+    text-align: justify;
+}
+
+/* .absMainSection::before { 
+    content: "";
+    background-color: yellow;
+    width: 100%;
+    border-bottom: #570194 5px solid;
+    animation-name: moveIt;
+    animation-duration: 4s;
+    animation-iteration-count:3s;
+  }
+
+  @keyframes moveIt{
+    0% {width: 0%;}
+    5% {width: 5%;}
+    10% {width: 10%;}
+    15% {width: 15%;}
+    20% {width: 20%;}
+    25% {width: 25%;}
+    30% {width: 30%;}
+    35% {width: 35%;}
+    40% {width: 40%;}
+    50% {width: 50%;}
+    60% {width: 60%;}
+    70% {width: 70%;}
+    80% {width: 80%;}
+    90% {width: 90%}
+    100% {width: 100%}
+} */
+
+.absMainSection h1 {
+    background: #570194;
+    color: #ffffff;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 90px;
+}
+
+.absMainSection ul {
+    margin-top: 0px;
+}
+.absMainSection ul li {
+    margin-top:22px;
+}
+
+/* .absMainSection p {
+    color: #570194;
+} */
+
+
+.parallax {
+    /* The image used */
+    background-image: url("../exercisesGuidesImages/abs.jpg");
+  
+    /* Set a specific height */
+    min-height: 700px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .exercises {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-gap: 30px;
+    margin-top: 80px;
+    padding: 100px;
+    background: #f1f1f1;
+    /* width: 80%;
+    margin-left: 10%; */
+    font-size: 25px;
+  }
+
+  .exercises > div > img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+.instructorOpinion {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-evenly;
+    margin-top: 150px;
+    margin-left: 15%;
+}
+
+.instructorOpinion img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    top: 30px;
+    left: 120px;
+}
+
+.instructorOpinion p {
+    font-size: 25px;
+    color: #212121;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.detailsOfTheInstructor {
+    font-size: 25px;
+    color: #570194;
+    line-height: 0.5;
+    margin-left: 15%;
+}
+
+
+.backToExercisesButton {
+    font-size: 17px;
+    padding: 10px;
+    cursor: pointer;
+    color: #000000;
+    background: #ffffff;
+    outline: none;
+    border: #000000 solid 1px;
+    transition: all 0.5s;
+    margin-left: 15%;
+    margin-top: 20px;
+}
+
+.backToExercisesButton:hover {
+    background: #000000;
+    color: #ffffff;
+    border: #ffffff solid 8px;
+}
+
+

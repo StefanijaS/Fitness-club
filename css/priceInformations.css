@@ -1,0 +1,69 @@
+
+.trainingInformations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    padding: 30px;
+
+}
+
+.memberships {
+    background: #570194;
+    color: #fff;
+    width: 50%;
+    top: 40px;
+    position: relative;
+    margin-left: 25%;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+.columns {
+    padding: 8px;
+    position: relative;
+    top: 5  0px;
+  }
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+    background: #fff;
+    box-shadow: 10px 10px 10px grey;
+    margin: 40px;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+}
+
+
+.price .header {
+    background-color: #570194;
+    color: white;
+    font-size: 15px;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    font-size: 20px;
+}
+
+.button {
+    /* background-color: #4CAF50; */
+    /* background-color: #4c4c4c; */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}

@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #f1f1f1;    
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    background: #570194;
+    z-index: 999;
+}
+
+.nav-bar a {
+    padding: 16px 14px;
+    text-decoration: none;
+    /* background-color: #333; */
+    color: #f2f2f2;
+}
+
+.nav-bar a:hover {
+    background-color: #ddd;
+    color: black;
+    border-bottom-width: 4px;
+}
+
+.exerciseGuideText {
+    width: 70%;
+    margin-left: 15%;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.exerciseGuideText p {
+    color: #000000;
+}
+
+
+.exercisesGuidesImagesAndTextSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    grid-gap: 30px;
+    width: 90%;
+    margin-left: 5%;
+    font-size: 20px;
+    margin-top: 10%;
+}
+
+.exercisesGuidesImagesAndTextSection p {
+    color: #000000;
+}
+
+
+.exercisesGuidesImagesAndTextSection > div > img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.exercisesGuidesImagesAndTextSection button {
+    font-size: 17px;
+    padding: 10px;
+    cursor: pointer;
+    color: #000000;
+    background: #ffffff;
+    outline: none;
+    border: #000000 solid 1px;
+    transition: all 0.5s;
+}
+
+.exercisesGuidesImagesAndTextSection button:hover {
+    background: #000000;
+    color: #ffffff;
+    border: #ffffff solid 8px;
+}

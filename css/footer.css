@@ -1,0 +1,48 @@
+.footerSection {   
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    background: #570194;    
+    box-shadow: 20px 20px 10px grey;
+    margin: 40px;
+}
+
+.footerSection .logoImage {
+    width: 300px;
+    margin-top: 20%;
+    position: relative;
+    left: -70px;
+    bottom: 30px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+
+.workTime {
+    justify-content: space-evenly;
+    display: grid;
+    
+}
+
+.workTime h2 , p {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.workTime span {
+    font-weight: normal;
+}
+
+
+.workTime h2 {
+    font-weight: bold;
+}
+
+.logo {
+    position: relative;
+    left: 80px;
+}
+
+.adress {
+    font-size: 23px;
+    color: #ffffff;
+}
+

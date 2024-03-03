@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #f1f1f1;    
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    background: #570194;
+    z-index: 999;
+}
+
+.nav-bar a {
+    padding: 16px 14px;
+    text-decoration: none;
+    /* background-color: #333; */
+    color: #f2f2f2;
+}
+
+.nav-bar a:hover {
+    background-color: #ddd;
+    color: black;
+    border-bottom-width: 4px;
+}
+
+
+.backgroundImageDiv {
+  background-image: url("../spaCenterImages/spaCenterMainImage.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.backgroundImageDiv p {
+    font-size: 60px;
+    border: #ffffff 2px solid;
+    padding: 8px;
+}
+
+.backgroundImageDiv h3 {
+    position: relative;
+    bottom: 12px;
+}
+
+.backgroundImageDiv div {
+    margin-top: 15px;
+}
+
+.backgroundImageDiv button {
+    width: 200px;
+    display: grid;
+    margin-left: 200px;
+    padding: 12px;
+    color: #000000;
+    font-weight: bold;
+    transition: all 0.4s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.backgroundImageDiv button:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+.spaCenterText {
+    font-size: 40px;
+    display: grid;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.spaCenterImagesAndTextSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 50px;
+    text-align: justify;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 100px;
+}
+
+.spaCenterImagesAndTextSection p {
+    color: #000000;
+}
+
+.spaCenterImagesAndTextSection > div > img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.spaCenterImagesAndTextSection h2 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.spaCenterImagesAndTextSection p {
+    font-size: 20px;
+}
+
+.spaFeatures h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+}
+/* bottom: 22px;
+text-align: center;
+position: relative; */

@@ -1,0 +1,161 @@
+.trainers {
+  box-shadow: 10px 10px 10px grey;
+  background: #fff;
+  margin: 40px;
+}
+
+.instructorBoxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-gap: 8px;
+}
+
+.instructorBoxes > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instructorBoxes div {
+  width: 100%;
+  height: 100%;
+}
+
+.infoPerInstructor {
+  position: relative;
+  width: 50%;
+  padding: 12px;
+  top: 5px 0px;
+  box-shadow: 4px 4px 10px grey;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.firstOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #570194;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: .3s ease;
+  cursor: pointer;
+  z-index:1;
+}
+
+.secondOverlayOnClick h2 , h4  {
+  color: #4C4C4C;
+} 
+
+.infoPerInstructor:hover .firstOverlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.arrowPointerInstructor {
+  float: right;
+  font-size: 50px;
+  color: white;
+}
+
+.secondOverlayOnClick  {
+  display: none;
+}
+
+.secondOverlayOnClick  {
+  font-size: 15px;
+  color: #4C4C4C;
+  text-align: justify;
+}
+
+.activeteTheSecondOverlayOnClick {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #f1f1f1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  display: block;
+  padding: 10px;
+}
+
+
+.activeteTheSecondOverlayOnClick p {
+  text-decoration: none;
+  font-size: 16px;
+  color: #555555;
+  display: block;
+  transition: 0.3s;
+  margin-right: 55%;
+}
+
+.secondOverlayOnClick .instructorImage {
+  float: right;
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+}
+
+.activeteTheSecondOverlayOnClick h1 {
+  color: #4C4C4C;
+}
+
+.closeTheInstructorBox {
+  font-size: 50px;
+  color: #570194;
+  cursor: pointer;
+  float: right;
+  right: 20px;
+  position: relative;
+  top: 0px;
+}
+
+/* .closeTheInstructorBox:hover {
+  background: #570194;
+  color: #f1f1f1;
+  transition: all 0.4s;
+} */
+
+.ourCouaches {
+    color: #4C4C4C;
+    position: relative;
+}
+
+
+.ourCouachesBorderBottom{
+  color: #4C4C4C;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.ourCouachesBorderBottom::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  width: 50%;
+  line-height: 10px;
+  border-top: 5px solid #570194;
+}

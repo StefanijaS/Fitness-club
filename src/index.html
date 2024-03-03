@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    
+    <link rel="stylesheet" href="../css/navbarAndVideo.css" />
+    <link rel="stylesheet" href="../css/imageGalleryShow.css" />
+    <link rel="stylesheet" href="../css/proteinsSection.css" />
+    <link rel="stylesheet" href="../css/priceInformations.css" />
+    <link rel="stylesheet" href="../css/theModalBox.css" />
+    <link rel="stylesheet" href="../css/instructors.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <title>Homepage</title>
+</head>
+<body>
+
+
+    
+<div id="wrapper">
+        <!-- The automatic type writer -->
+        <div class="welcomeMessageDiv" class="animated fadeInUpBig">
+            <h2 class="welcomeMessage"></h2>
+        </div>
+
+    <main>
+        <div class="headerr">
+            <nav class="nav-bar">
+                <a href="index.html">Home</a>
+                <a href="exercises.html">Exercises Guides</a>
+                <a href="spaCenter.html">Our Spa Center</a>
+            </nav>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>  
+        </div>
+            
+    <section class="sectionVideo">
+        <video autoplay muted loop id="myVideo">
+            <source src="TheVideo/video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="whyChooseUs">
+            <div class="whyChooseUsText">
+                <h2>WHY CHOOSE US?</h2>
+                <h4>Helping you reach your health & Fitness Goals</h4>
+                <p>
+                    Royal Fitness Club offers an atmosphere unique in the fitness industry. 
+                    We focus on creating healthy lifestyles through all disciplines of 
+                    fitness training. Our clientele will have access to different types of 
+                    group exercise classes and will be heavily encouraged to participate in as many as 
+                    possible. Our clientele will learn how to create their own path to wellness using disciplines such 
+                    as boot-camp style training, yoga, weightlifting, martial arts, suspension training, athlete training 
+                    and combination classes. Royal offers an environment that is the truest embodiment of CROSSTRAINING 
+                    available under one roof.
+                </p>
+            </div>
+    </section>
+
+    <section class="gallery">
+        <div class="imageGalleryContainer">
+
+        <a target="_blank" href="ImageGalleryPictures/picture1.jpg">
+            <div>
+                <img src="ImageGalleryPictures/picture1.jpg" alt="Picture From Our Fitness Studio"/>
+            </div>
+        </a>
+
+        <a target="_blank" href="ImageGalleryPictures/picture2.jpg">
+            <div>
+                <img src="ImageGalleryPictures/picture2.jpg" alt="Picture From Our Fitness Studio">
+            </div>
+        </a>
+
+        <a target="_blank" href="ImageGalleryPictures/picture3.jpg">
+            <div>
+                <img src="ImageGalleryPictures/picture3.jpg" alt="Picture From Our Fitness Studio"/>
+            </div>
+        </a>
+
+        <a target="_blank" href="ImageGalleryPictures/picture4.jpg">
+            <div>
+                <img src="ImageGalleryPictures/picture4.jpg" alt="Picture From Our Fitness Studio"/>
+            </div>
+        </a>
+
+        <a target="_blank" href="ImageGalleryPictures/picture5.jpg">
+            <div>
+                <img src="ImageGalleryPictures/picture5.jpg" alt="Picture From Our Fitness Studio"/>
+            </div>
+        </a>
+
+        <a target="_blank" href="ImageGalleryPictures/picture6.jpg">
+            <div>
+                <img src="ImageGalleryPictures/picture6.jpg" alt="Picture From Our Fitness Studio"/>
+            </div>
+        </a>
+
+        <a target="_blank" href="ImageGalleryPictures/picture7.jpg">
+            <div>
+                <img src="ImageGalleryPictures/picture7.jpg" alt="Picture From Our Fitness Studio"/>
+            </div>
+        </a>
+
+        <a target="_blank" href="ImageGalleryPictures/picture8.jpg">
+            <div>
+                <img src="ImageGalleryPictures/picture8.jpg" alt="Picture From Our Fitness Studio"/>
+            </div>
+        </a>
+
+        <a target="_blank" href="ImageGalleryPictures/picture9.jpg">
+            <div>
+                <img src="ImageGalleryPictures/picture9.jpg" alt="Picture From Our Fitness Studio"/>
+            </div>
+        </a>
+
+        <a target="_blank" href="ImageGalleryPictures/picture10.jpg">
+            <div>
+                <img src="ImageGalleryPictures/picture10.jpg" alt="Picture From Our Fitness Studio"/>
+            </div>
+        </a>
+
+        <a target="_blank" href="ImageGalleryPictures/picture11.jpg">
+            <div>
+                <img src="ImageGalleryPictures/picture11.jpg" alt="Picture From Our Fitness Studio"/>
+            </div>
+        </a>
+
+        <a target="_blank" href="ImageGalleryPictures/picture12.jpg">
+            <div>
+                <img src="ImageGalleryPictures/picture12.jpg" alt="Picture From Our Fitness Studio"/>
+            </div>
+        </a>
+        </div>
+    </section>
+
+
+
+    <section class="proteinsModalBoxAndCalculator">
+        <div class="explanationAboutTheCalculator">    
+            <div class="showingTheModalBox">
+                <h3>Click the button down to see our whole Protein Shop</h3>
+                <button class="openTheModalBox">Open our Protein Shop</button>
+            </div>
+
+            <div class="youCanAlsoBuy">
+                <h3>You can also buy the best proteins by us,highly recommended by our instructors</h3>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div class="theModalBox">
+            <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="closeTheModalBox">&times;</span>
+                        
+
+                        <button class="sortByHighestPrices">Sort the prortein by the highest price</button>
+                        <button class="sortByLowestPrices">Sort the prortein by the lowest price</button>
+                        <h3>Your current sum from the shopping</h3>
+                        <div id="sum"></div>
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="modal-body">
+                            <div class="theMainSectionInTheModalBody"></div>
+                    </div>
+            </div> 
+        </div>
+        <div class="sellingProteinsSection"></div>
+    </section>
+        
+        
+    <section class="price">
+        
+        <div class="memberships"><h2>Memberships-Price Table</h2></div>
+        <div class="trainingInformations">
+
+            <div class="columns">
+                    <ul class="price">
+                        <li class="header">MONTHLY PACKAGES</li>
+                        <li>No-Contract Unlimited Classes – $120/month</li>
+                        <li>6 Month Contract Unlimited Classes – $105/month</li>
+                        <li>Family Membership – $90/month</li>
+                        <li>Year Unlimited – $1099</li>
+                        <li class="grey"><a href="#" class="button" style="background-color:#4C4C4C">Sign Up</a></li>
+                    </ul>
+                    </div>
+    
+                    <div class="columns">
+                    <ul class="price">
+                        <li class="header" style="background-color:#4C4C4C">DROPPING IN FROM OUT OF TOWN? NO PROBLEM!</li>
+                        <li>One Day – $20</li>
+                        <li>One Day with tank top/t-shirt – $25</li>
+                        <li>2 Day – $35</li>
+                        <li>2 Day with tank top/t-shirt – $40</li>
+                        <li>1 Week Unlimited – $50</li>
+                        <li>1 Week unlimited with tank top/t-shirt – $55</li>
+                        <li class="grey"><a href="#" class="button" style="background-color:#570194">Sign Up</a></li>
+                    </ul>
+                    </div>
+                    
+                    <div class="columns">
+                    <ul class="price">
+                        <li class="header">DIGITAL PUNCH CARDS</li>
+                        <li>Free Week (Locals Only)</li>
+                        <li>Drop-In (1 Class) – $20</li>
+                        <li>10 Classes –  $130</li>
+                        <li>20 Classes – $220</li>
+                        <li class="grey"><a href="#" class="button" style="background-color:#4C4C4C" >Sign Up</a></li>
+                    </ul>
+                    </div>
+                                
+        </div>
+    </section>
+
+
+    <section class="trainers">
+        <div class="instructorBoxes">
+            <h1 class="ourCouaches">OUR <p class="ourCouachesBorderBottom"> COACHES</p></h1>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footerSection">
+
+        <div class="workTime">
+            <h2>Our Work Time</h2>
+            <p>Monday ---- <span>06:30 / 20:00</span></p>
+            <p>Tuesday ---- <span>07:00 / 19:30</span></p>
+            <p>Wednesday ---- <span>06:30 / 20:00</span></p>
+            <p>Thursday ---- <span>07:00 / 19:30</span></p>
+            <p>Friday ---- <span>	06:30 / 20:00</span></p>
+            <p>Saturday ---- <span>08:00 / 15:00</span></p>
+            <p>Sunday ---- <span>	09:00 / 15:30</span></p>
+        </div>
+
+        <div class="logo">
+            <img class="logoImage" src="ImageGalleryPictures/logoFitness.jpg" alt="Fitness club logo"/>
+        </div>
+
+        <div class="adress">
+            <h3>Royal Fitness club</h3>
+            <p>Washington Street 1607 , DC , 20006</p>
+            <img src="ImageGalleryPictures/payingCards.png" alt="Paying cards abilities"/>
+        </div>
+    </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+</body>
+</html>
